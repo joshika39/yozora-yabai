@@ -44,7 +44,8 @@ yabai -m rule --add app="WebStorm.*" title="Settings" space=^2 manage=off
 yabai -m rule --add app="Safari" space=^3
 
 # space 4: web (development)
-yabai -m rule --add app="Chrome" space=^4
+yabai -m rule --add app="Google Chrome" space=^4
+yabai -m rule --add app="Google Chrome" title="Developer Tools*" space=^4
 
 # space 5: stack
 yabai -m space 5 --layout stack
