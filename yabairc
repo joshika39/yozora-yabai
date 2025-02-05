@@ -33,25 +33,28 @@ yabai -m rule --add app="iTerm2" space=^1
 yabai -m rule --add app="kitty" space=^1
 
 # space 2: web
-yabai -m rule --add app="Safari" space=^3
+yabai -m rule --add app="Safari" space=^2
 
 # space 3: jetbrains development
-yabai -m rule --add app="JetBrains Rider.*" space=^2
-yabai -m rule --add app="JetBrains Rider.*" title="Preferences" space=^2 manage=off
-yabai -m rule --add app="PhpStorm.*" space=^2
-yabai -m rule --add app="PhpStorm.*" title="Preferences" space=^2 manage=off
-yabai -m rule --add app="WebStorm.*" space=^2
-yabai -m rule --add app="WebStorm.*" title="Settings" space=^2 manage=off
+yabai -m rule --add app="JetBrains Rider.*" space=^3
+yabai -m rule --add app="JetBrains Rider.*" title="Preferences" space=^3 manage=off
+yabai -m rule --add app="PhpStorm.*" space=^3
+yabai -m rule --add app="PhpStorm.*" title="Preferences" space=^3 manage=off
+yabai -m rule --add app="WebStorm.*" space=^3
+yabai -m rule --add app="WebStorm.*" title="Settings" space=^3 manage=off
 
 # space 4: web (development)
 yabai -m rule --add app="Google Chrome" space=^4
 yabai -m rule --add app="Google Chrome" title="Developer Tools*" space=^4
 
+# space 5: todo and notes
+yabai -m rule --add app="Things" space=^5
+yabai -m rule --add app="Obsidian" space=^5
+
 # display 2: off-stream and out of the way
 yabai -m rule --add app="OBS" space=^6
 yabai -m rule --add app="Discord" space=^7
 yabai -m rule --add app="Discord PTB" space=^7
-yabai -m rule --add app="Things" space=^8
 yabai -m rule --add app="Spark Desktop" space=^9
 yabai -m rule --add app="Spotify" space=^10
 
