@@ -39,7 +39,7 @@ yabai -m rule --add app="Safari" space=^2
 yabai -m rule --add app="JetBrains Rider.*" space=^3
 yabai -m rule --add app="JetBrains Rider.*" title="Preferences" space=^3 manage=off
 yabai -m rule --add app="PhpStorm.*" space=^3
-yabai -m rule --add app="PhpStorm.*" title="Preferences" space=^3 manage=off
+yabai -m rule --add app="PhpStorm.*" title="Settings" space=^3 manage=off
 yabai -m rule --add app="WebStorm.*" space=^3
 yabai -m rule --add app="WebStorm.*" title="Settings" space=^3 manage=off
 
