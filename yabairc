@@ -42,6 +42,10 @@ yabai -m rule --add app="PhpStorm.*" space=^3
 yabai -m rule --add app="PhpStorm.*" title="Settings" space=^3 manage=off
 yabai -m rule --add app="WebStorm.*" space=^3
 yabai -m rule --add app="WebStorm.*" title="Settings" space=^3 manage=off
+yabai -m rule --add app="IntelliJ IDEA.*" space=^3
+yabai -m rule --add app="IntelliJ IDEA.*" title="Settings" space=^3 manage=off
+yabai -m rule --add app="PyCharm.*" space=^3
+yabai -m rule --add app="PyCharm.*" title="Settings" space=^3 manage=off
 
 # space 4: web (development)
 yabai -m rule --add app="Google Chrome" space=^4
