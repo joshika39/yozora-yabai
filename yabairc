@@ -36,16 +36,10 @@ yabai -m rule --add app="kitty" space=^1
 yabai -m rule --add app="Safari" space=^2
 
 # space 3: jetbrains development
-yabai -m rule --add app="JetBrains Rider.*" space=^3
-yabai -m rule --add app="JetBrains Rider.*" title="Preferences" space=^3 manage=off
-yabai -m rule --add app="PhpStorm.*" space=^3
-yabai -m rule --add app="PhpStorm.*" title="Settings" space=^3 manage=off
-yabai -m rule --add app="WebStorm.*" space=^3
-yabai -m rule --add app="WebStorm.*" title="Settings" space=^3 manage=off
-yabai -m rule --add app="IntelliJ IDEA.*" space=^3
-yabai -m rule --add app="IntelliJ IDEA.*" title="Settings" space=^3 manage=off
-yabai -m rule --add app="PyCharm.*" space=^3
-yabai -m rule --add app="PyCharm.*" title="Settings" space=^3 manage=off
+JETBRAIN_APPS="JetBrains Rider.*|PhpStorm.*|WebStorm.*|IntelliJ IDEA.*|PyCharm.*"
+JETBRAIN_DIALOGS="Preferences|Settings|Rename|Add File to Git|Delete"
+yabai -m rule --add app="${JETBRAIN_APPS}" space=^3
+yabai -m rule --add app="${JETBRAIN_APPS}" title="${JETBRAIN_DIALOGS}" space=^3 manage=off
 
 # space 4: web (development)
 yabai -m rule --add app="Google Chrome" space=^4
