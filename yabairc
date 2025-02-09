@@ -40,18 +40,18 @@ JETBRAIN_DIALOGS="Preferences|Settings|Rename|Add File to Git|Delete"
 yabai -m rule --add app="${JETBRAIN_APPS}" space=^3
 yabai -m rule --add app="${JETBRAIN_APPS}" title="${JETBRAIN_DIALOGS}" space=^3 manage=off
 
-# space 4: web (development)
+# space 4: web (development) or calendar
 yabai -m rule --add app="Google Chrome" space=^4
 yabai -m rule --add app="Google Chrome" title="Developer Tools*" space=^4
+yabai -m rule --add app="Calendar" space=^4
 
 # space 5: todo and notes
 yabai -m rule --add app="Things" space=^5
 yabai -m rule --add app="Obsidian" space=^5
 
-# display 2: off-stream and out of the way
-yabai -m rule --add app="OBS" space=^6
-yabai -m rule --add app="Discord" space=^7
-yabai -m rule --add app="Discord PTB" space=^7
+yabai -m rule --add app="Microsoft Teams" space=^6
+yabai -m rule --add app="Microsoft Teams" title="New meeting*" space=^6 manage=off
+yabai -m rule --add app="Discord|Discord PTB" space=^8
 yabai -m rule --add app="Spark Desktop" space=^9
 yabai -m rule --add app="Spotify" space=^10
 
