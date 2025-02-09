@@ -1,3 +1,8 @@
 #!/usr/bin/env sh
 
+COMMAND=${1:-add}
 
+FOLLOW=$(if [ "${COMMAND}" = "add" ]; then echo "^"; else echo ""; fi)
+
+# space 2: web
+yabai -m rule --${COMMAND} app="Safari" space=${FOLLOW}2
