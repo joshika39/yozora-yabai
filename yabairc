@@ -42,7 +42,7 @@ yabai -m rule --add app="${JETBRAIN_APPS}" title="${JETBRAIN_DIALOGS}" space=^3 
 
 # space 4: web (development) or calendar
 yabai -m rule --add app="Google Chrome" space=^4
-yabai -m rule --add app="Google Chrome" title="Developer Tools*" space=^4
+yabai -m rule --add app="Google Chrome" title="Developer Tools*" space=^4 manage=off
 yabai -m rule --add app="Calendar" space=^4
 
 # space 5: todo and notes
