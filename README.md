@@ -1,5 +1,8 @@
 # Yozora Yabai configs
 
+> [!IMPORTANT]
+> The configurations is under development
+
 There is the `./rules` folder that is for the scripts to add/apply rules to the opened windows.
 
 ## Requirements
