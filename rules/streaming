@@ -3,4 +3,6 @@
 COMMAND=${1:-add}
 FOLLOW=$(if [ "${COMMAND}" = "add" ]; then echo "^"; else echo ""; fi)
 
+yabai -m config external_bar main:0:52
+
 yabai -m rule --${COMMAND} --app="OBS" --space=${FOLLOW}6
