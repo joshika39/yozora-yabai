@@ -7,3 +7,15 @@ yabai -m config external_bar main:0:0
 
 # space 2: web
 yabai -m rule --${COMMAND} app="Safari" space=${FOLLOW}2
+
+# space 5: todo and notes
+yabai -m rule --${COMMAND} app="Things" space=^5
+yabai -m rule --${COMMAND} app="Obsidian" space=^5
+
+yabai -m rule --${COMMAND} app="Calendar" space=^6
+yabai -m rule --${COMMAND} app="Microsoft Teams" space=^6
+yabai -m rule --${COMMAND} app="Microsoft Teams" title="New meeting*" space=^6 manage=off
+yabai -m rule --${COMMAND} app="Discord|Discord PTB" space=^8
+yabai -m rule --${COMMAND} app="Messenger" space=^8
+yabai -m rule --${COMMAND} app="Spark Desktop" space=^9
+yabai -m rule --${COMMAND} app="Spotify" space=^10

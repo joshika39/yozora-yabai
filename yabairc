@@ -44,18 +44,6 @@ yabai -m rule --add app="${JETBRAIN_APPS}" title="${JETBRAIN_DIALOGS}|${PYCHARM_
 yabai -m rule --add app="Google Chrome" space=^4
 yabai -m rule --add app="Google Chrome" title="Developer Tools*" space=^4 manage=off
 
-# space 5: todo and notes
-yabai -m rule --add app="Things" space=^5
-yabai -m rule --add app="Obsidian" space=^5
-
-yabai -m rule --add app="Calendar" space=^6
-yabai -m rule --add app="Microsoft Teams" space=^6
-yabai -m rule --add app="Microsoft Teams" title="New meeting*" space=^6 manage=off
-yabai -m rule --add app="Discord|Discord PTB" space=^8
-yabai -m rule --add app="Messenger" space=^8
-yabai -m rule --add app="Spark Desktop" space=^9
-yabai -m rule --add app="Spotify" space=^10
-
 # things which create floating children
 yabai -m rule --add title="JetBrains Toolbox" manage=off mouse_follows_focus=off
 yabai -m rule --add app="System Settings" manage=off
