@@ -8,3 +8,4 @@ yabai -m config external_bar main:0:72
 [ -z "${FOLLOW}" ] && exit 0
 
 yabai -m rule --${COMMAND} app="OBS" space=${FOLLOW}6
+yabai -m rule --${COMMAND} app="Safari" title="personal*" space=${FOLLOW}12
