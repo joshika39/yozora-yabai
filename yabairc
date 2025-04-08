@@ -33,12 +33,13 @@ yabai -m rule --add app="kitty" space=^1
 
 source ~/.config/yabai/rules/default
 
-# space 3: jetbrains development
+# space 3: jetbrains development | vscode
 JETBRAIN_APPS="JetBrains Rider.*|PhpStorm.*|WebStorm.*|IntelliJ IDEA.*|PyCharm.*"
 JETBRAIN_DIALOGS="Preferences|Settings|Rename|Add File to Git|Delete|Manage Licenses|Copy|Move|Refactor|Conflicts|Merge Revisions for.*"
 PYCHARM_DIALOGS="Creating Virtual Environments"
 yabai -m rule --add app="${JETBRAIN_APPS}" space=^3
 yabai -m rule --add app="${JETBRAIN_APPS}" title="${JETBRAIN_DIALOGS}|${PYCHARM_DIALOGS}" space=^3 manage=off
+yabai -m rule --add app="Visual Studio Code" space=^3
 
 # space 4: web (development)
 yabai -m rule --add app="Google Chrome" space=^4
@@ -48,8 +49,8 @@ yabai -m rule --add app="Google Chrome" title="Developer Tools.*" space=^4 manag
 yabai -m rule --add title="JetBrains Toolbox" manage=off mouse_follows_focus=off
 yabai -m rule --add app="System Settings" manage=off
 yabai -m rule --add app="Stats" manage=off mouse_follows_focus=off
-# yabai -m rule --add app="iStat Menus" manage=off mouse_follows_focus=off
-yabai -m rule --add app="Things" grid=10:3:1:1:1:8 mouse_follows_focus=on sticky=on
+yabai -m rule --add app="iStat Menus" manage=off mouse_follows_focus=off
+#yabai -m rule --add app="Things" grid=10:3:1:1:1:8 mouse_follows_focus=on sticky=on
 yabai -m rule --add app="choose" manage=off mouse_follows_focus=off
 yabai -m rule --add app="CleanShot X" manage=off mouse_follows_focus=off
 yabai -m rule --add app="Raycast" title="Settings" manage=off mouse_follows_focus=off
