@@ -37,13 +37,13 @@ source ~/.config/yabai/rules/default
 JETBRAIN_APPS="JetBrains Rider.*|PhpStorm.*|WebStorm.*|IntelliJ IDEA.*|PyCharm.*"
 JETBRAIN_DIALOGS="Preferences|Settings|Rename|Add File to Git|Delete|Manage Licenses|Copy|Move|Refactor|Conflicts|Merge Revisions for.*"
 PYCHARM_DIALOGS="Creating Virtual Environments"
-yabai -m rule --add app="${JETBRAIN_APPS}" space=^3
-yabai -m rule --add app="${JETBRAIN_APPS}" title="${JETBRAIN_DIALOGS}|${PYCHARM_DIALOGS}" space=^3 manage=off
-yabai -m rule --add app="Visual Studio Code" space=^3
+yabai -m rule --add app="${JETBRAIN_APPS}" space=^4
+yabai -m rule --add app="${JETBRAIN_APPS}" title="${JETBRAIN_DIALOGS}|${PYCHARM_DIALOGS}" space=^4 manage=off
+yabai -m rule --add app="Visual Studio Code" space=^4
 
-# space 4: web (development)
-yabai -m rule --add app="Google Chrome" space=^4
-yabai -m rule --add app="Google Chrome" title="Developer Tools.*" space=^4 manage=off
+## space 4: web (development)
+#yabai -m rule --add app="Google Chrome" space=^4
+#yabai -m rule --add app="Google Chrome" title="Developer Tools.*" space=^4 manage=off
 
 # things which create floating children
 yabai -m rule --add title="JetBrains Toolbox" manage=off mouse_follows_focus=off
