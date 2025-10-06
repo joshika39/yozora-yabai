@@ -18,8 +18,5 @@ yabai -m rule --${COMMAND} app="Microsoft Teams" title="New meeting*" space=^6 m
 yabai -m rule --${COMMAND} app="Discord|Discord PTB" space=^8
 yabai -m rule --${COMMAND} app="Messenger" space=^8
 yabai -m rule --${COMMAND} app="Messages" space=^8
-yabai -m rule --${COMMAND} app="Spark Desktop" space=^9
-yabai -m rule --${COMMAND} app="Mail" space=^9
-yabai -m rule --${COMMAND} app="Spotify" space=^10
-yabai -m rule --${COMMAND} app="ミュージック" space=^10
-yabai -m rule --${COMMAND} app="Music" space=^10
+yabai -m rule --${COMMAND} app="Spark Desktop|Mail|メール" space=^9
+yabai -m rule --${COMMAND} app="ミュージック|Spotify|Music" space=^10
