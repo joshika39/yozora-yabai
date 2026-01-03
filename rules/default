@@ -33,3 +33,6 @@ yabai -m rule --${COMMAND} app="Discord|Discord PTB" space=${FOLLOW}8
 yabai -m rule --${COMMAND} app="Messages" space=${FOLLOW}8
 yabai -m rule --${COMMAND} app="Mail|メール" space=${FOLLOW}9
 yabai -m rule --${COMMAND} app="ミュージック|Spotify|Music" space=${FOLLOW}10
+
+yabai -m rule --${COMMAND} app="Loopback" space=${FOLLOW}12
+yabai -m rule --${COMMAND} app="Audio Hijack" space=${FOLLOW}12
