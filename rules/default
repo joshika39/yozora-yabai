@@ -27,6 +27,8 @@ yabai -m rule --${COMMAND} app="Calendar" space=${FOLLOW}6
 yabai -m rule --${COMMAND} app="Microsoft Teams" space=${FOLLOW}6
 yabai -m rule --${COMMAND} app="Microsoft Teams" title="New meeting*" space=${FOLLOW}6 manage=off
 
+yabai -m rule --${COMMAND} app="OBS Studio" space=${FOLLOW}7
+
 yabai -m rule --${COMMAND} app="Discord|Discord PTB" space=${FOLLOW}8
 yabai -m rule --${COMMAND} app="Messages" space=${FOLLOW}8
 yabai -m rule --${COMMAND} app="Mail|メール" space=${FOLLOW}9
